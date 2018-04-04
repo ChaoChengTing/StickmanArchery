@@ -104,6 +104,7 @@ public class Hurt : MonoBehaviour
         }
         if (hitCount >= 100)
         {
+            hitCount = 100;
             isDead = true;
             animator.SetTrigger("Dead");
             GetComponent<Shoot>().enabled = false;
